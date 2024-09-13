@@ -30,7 +30,7 @@ for i in c:
 
 
 # 결측치 처리
-all_data.fillna(-1, inplace=True)
+all_data.fillna(-99, inplace=True)
 
 # train / test 데이터셋
 train_n=len(train)
