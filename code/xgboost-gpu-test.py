@@ -1,4 +1,6 @@
-# window에서는 gpu 지원되는 xgboost는
+# gpu 스펙 보는 커맨드 (터미널)
+# nvidia-smi
+# 현재 window에서는 gpu 지원되는 xgboost는
 # pip를 통해서만 설치가능!
 # pip install xgboost
 
