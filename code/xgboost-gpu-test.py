@@ -1,13 +1,14 @@
 # gpu 스펙 보는 커맨드 (터미널)
 # nvidia-smi
 # 현재 window에서는 gpu 지원되는 xgboost는
-# pip를 통해서만 설치가능!
+# pip install를 통해서만 설치가능!
 # pip install xgboost
 
 import numpy as np
 import xgboost as xgb
 
-xgb_model = xgb.XGBRegressor( # tree_method="gpu_hist" # deprecated
+xgb_model = xgb.XGBRegressor(
+    # tree_method="gpu_hist" # deprecated
     tree_method="hist",
     device="cuda"
 )
